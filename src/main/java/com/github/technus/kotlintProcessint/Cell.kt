@@ -27,25 +27,21 @@ class Cell(_position: Position,_size: Size= Size(32f,32f)):Area(_position, _size
             field = value
         }
 
-    fun funt(){
-            if(exists){
-                if(leftUp){
-                    if(downRight){
-                        leftUp=false
-                    }else{
-                        downRight=true
-                    }
-                }else{
-                    if(downRight){
-                        exists=false
-                    }else{
-                        leftUp=true;
-                    }
-                }
-            }else{
-                exists=true
+    fun toByte():Byte{
+        if(exists){
+            var v=0b10000
+            if(leftUp){
+                v=v or 0b1010
             }
+            if(downRight){
+                v=v or 0b0101
+            }
+            return v.toByte()
+        }
+        return 0
     }
+
+    fun toChar():Char = if (exists) ('a'.toByte()+toByte()-0b10000).toChar() else ' '
 
     var ontop=false
 

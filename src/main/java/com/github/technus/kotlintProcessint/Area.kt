@@ -1,5 +1,6 @@
 package com.github.technus.kotlintProcessint
 
+import processing.event.KeyEvent
 import processing.event.MouseEvent
 
 open class Area(val position: Position,val size: Size) {
@@ -11,7 +12,7 @@ open class Area(val position: Position,val size: Size) {
 
     open fun mouseClicked(event: MouseEvent){}
 
-    open fun fixShit(){}
+    open fun keyTyped(event: KeyEvent) {}
 
     open fun draw(app: App) {
         app.pushStyle()

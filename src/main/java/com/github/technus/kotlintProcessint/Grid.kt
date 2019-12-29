@@ -1,5 +1,6 @@
 package com.github.technus.kotlintProcessint
 
+import processing.event.KeyEvent
 import processing.event.MouseEvent
 
 open class Grid<V:Area>(_position: Position,val gridSize:Size,val cellSize:Size):Area(_position,gridSize*cellSize) {
@@ -28,7 +29,7 @@ open class Grid<V:Area>(_position: Position,val gridSize:Size,val cellSize:Size)
         }
     }
 
-    override fun fixShit() {
-        cells.forEach { (_, obj) -> obj.fixShit() }
+    override fun keyTyped(event: KeyEvent) {
+        cells.forEach { (_, obj) -> obj.keyTyped(event) }
     }
 }

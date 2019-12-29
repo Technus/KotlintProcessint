@@ -32,8 +32,6 @@ class App : PApplet() {
     }
 
     override fun keyTyped(event: KeyEvent) {
-        if(event.key==' '){
-            text.fixShit()
-        }
+        text.keyTyped(event)
     }
 }
