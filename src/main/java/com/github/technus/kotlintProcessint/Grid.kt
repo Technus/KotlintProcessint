@@ -1,9 +1,11 @@
 package com.github.technus.kotlintProcessint
 
+import processing.event.KeyEvent
 import processing.event.MouseEvent
+import java.util.*
 
 open class Grid<V:Area>(_position: Position,val gridSize:Size,val cellSize:Size):Area(_position,gridSize*cellSize) {
-    protected val cells=HashMap<Position,V>()
+    protected val cells=TreeMap<Position,V>()
 
     operator fun get(position: Position)=cells[position]
     operator fun contains(position: Position)=cells.contains(position)
@@ -28,7 +30,7 @@ open class Grid<V:Area>(_position: Position,val gridSize:Size,val cellSize:Size)
         }
     }
 
-    override fun fixShit() {
-        cells.forEach { (_, obj) -> obj.fixShit() }
+    override fun keyTyped(event: KeyEvent) {
+        cells.forEach { (_, obj) -> obj.keyTyped(event) }
     }
 }

@@ -44,6 +44,53 @@ class Cell(_position: Position,_size: Size= Size(32f,32f)):Area(_position, _size
             }
             field = value
         }
+
+    fun toByte():Byte{
+        if(exists){
+            var v=0b10000
+            if(left){
+                v=v or 0b0010
+            }
+            if(right){
+                v=v or 0b0001
+            }
+            if(up){
+                v=v or 0b1000
+            }
+            if(down){
+                v=v or 0b0100
+            }
+            return v.toByte()
+        }
+        return 0
+    }
+
+    fun toChar():Char = if (exists) ('a'.toByte()+toByte()-0b10000).toChar() else '-'
+    fun fromChar(char: Char){
+        exists=false
+        if(char=='-') {
+            return
+        }
+        val toInt = char.toInt()-'a'.toInt()
+        when{
+            toInt or 0b10000 != 0 ->{
+                exists=true
+            }
+            toInt or 0b1000 != 0 ->{
+                up=true
+            }
+            toInt or 0b100 != 0 ->{
+                down=true
+            }
+            toInt or 0b10 != 0 ->{
+                left=true
+            }
+            toInt or 0b1 != 0 ->{
+                right=true
+            }
+        }
+    }
+
     private var onTop=false
 
     override fun mouseDragged(event: MouseEvent) {

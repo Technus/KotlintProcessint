@@ -14,6 +14,7 @@ class App : PApplet() {
     override fun setup() {
         surface.setResizable(true)
         surface.setTitle("Kotlin't Processin't")
+        textFont(createFont("Consolas",Constants.cellSize.h/2f))
         strokeWeight(1.1f)
         smooth()
     }
@@ -33,8 +34,6 @@ class App : PApplet() {
     }
 
     override fun keyTyped(event: KeyEvent) {
-        if(event.key==' '){
-            text.fixShit()
-        }
+        text.keyTyped(event)
     }
 }
