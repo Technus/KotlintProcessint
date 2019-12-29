@@ -45,7 +45,12 @@ class Glyph(
         app.popStyle()
     }
 
-    fun toStringRepresentation():String="${cells.entries.stream().filter{ (position,_)->position.x<gridSize.w-1&&position.y<gridSize.h-1 }.map{ (_,cell)->cell.toChar() }.toArray().joinToString(separator = "")}=${char.toInt()}"
+    fun toStringRepresentation():String=
+        "${cells.entries.stream()
+            .filter { (position, _) -> position.x < gridSize.w - 1 && position.y < gridSize.h - 1 }
+            .map { (_, cell) -> cell.toChar() }.toArray()
+            .joinToString(separator = "")
+        }=${char.toInt()}"
     fun fromStringRepresentation(string: String){
         val split = string.split("=")
         char=Integer.parseInt(split[1]).toChar()
@@ -101,14 +106,14 @@ class Glyph(
         cells.forEach { (position, cell) ->
             val left=cells[position.shift(-1f,0f)]
             val up=cells[position.shift(0f,-1f)]
-            val down=cells[position.shift(0f,1f)]
-            val right=cells[position.shift(1f,0f)]
             if(cell.up && (up==null || !up.down)){
                 cell.up=false
             }
             if(cell.left && (left==null || !left.right)){
                 cell.left=false
             }
+            val down=cells[position.shift(0f,1f)]
+            val right=cells[position.shift(1f,0f)]
             if(cell.down){
                 if(down==null || !down.up){
                     cell.down=false
