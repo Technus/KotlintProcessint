@@ -15,4 +15,5 @@ data class Size(val w: Float=0f, val h: Float=0f){
     operator fun plus(size: Size) = Size(size.w+w,size.h+h)
     operator fun minus(size: Size) = Size(w-size.w,h-size.h)
     operator fun times(size: Size) = Size(size.w*w,size.h*h)
+    operator fun div(divider: Number)= Size(w/divider.toFloat(),h/divider.toFloat())
 }

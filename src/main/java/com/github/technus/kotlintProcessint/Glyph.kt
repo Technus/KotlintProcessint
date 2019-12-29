@@ -15,12 +15,12 @@ class Glyph(
         }
     }
 
-    private var ontop=false
+    private var onTop=false
     private val activeArea=Area(position,cellSize*Constants.actualGlyphSize)
 
     override fun draw(app: App) {
         super.draw(app)
-        if(ontop){
+        if(onTop){
             app.pushMatrix()
             app.translate(position.x,position.y)
             app.pushStyle()
@@ -39,12 +39,24 @@ class Glyph(
 
     override fun mouseClicked(event: MouseEvent) {
         if(activeArea.envelops(event)) {
-            super.mouseClicked(event)
+            if(event.button==3){
+                clear()
+            }else{
+                super.mouseClicked(event)
+            }
         }
     }
 
+    private fun clear() {
+        cells.forEach { (_, cell) -> cell.exists=false }
+    }
+
     override fun mousePosition(position: Position?) {
-        ontop=envelops(position)
+        val envelops = envelops(position)
+        if(onTop && !envelops){
+            fixShit()
+        }
+        onTop=envelops
         super.mousePosition(position)
     }
 
@@ -61,24 +73,29 @@ class Glyph(
             val up=cells[position.shift(0f,-1f)]
             val down=cells[position.shift(0f,1f)]
             val right=cells[position.shift(1f,0f)]
-            if(cell.leftUp){
-                if((left==null || !left.downRight) && (up==null || !up.downRight)){
-                    cell.leftUp=false
+            if(cell.up && (up==null || !up.down)){
+                cell.up=false
+            }
+            if(cell.left && (left==null || !left.right)){
+                cell.left=false
+            }
+            if(cell.down){
+                if(down==null || !down.up){
+                    cell.down=false
+                }else if(left!=null && left.right && right!=null && right.left){
+                    cell.down=false
+                    down.up= false
                 }
             }
-            if(cell.downRight){
-                if((down==null || !down.leftUp) && (right==null || !right.leftUp)){
-                    cell.downRight=false
-                }else if(cell.leftUp && down!=null && right!=null && down.leftUp && right.leftUp){
-                    if((left!=null && left.downRight)){
-                        cell.downRight=false
-                        right.leftUp= false
-                    }else if(up!=null && up.downRight){
-                        cell.downRight= false
-                        down.leftUp=false
-                    }
+            if(cell.right){
+                if(right==null || !right.left){
+                    cell.right=false
+                }else if(down!=null && down.up && up!=null && up.down){
+                    cell.right=false
+                    right.left=false
                 }
             }
+
         }
     }
 }

@@ -14,6 +14,7 @@ class App : PApplet() {
     override fun setup() {
         surface.setResizable(true)
         surface.setTitle("Kotlin't Processin't")
+        strokeWeight(1.1f)
         smooth()
     }
 
