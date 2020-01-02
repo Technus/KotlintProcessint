@@ -14,6 +14,7 @@ data class Position(val x: Float=0f, val y: Float=0f): Comparable<Position>{
         val compare = y.compareTo(other.y)
         return if(compare==0) x.compareTo(other.x) else compare
     }
+    operator fun unaryMinus(): Position =Position(-x,-y)
 }
 data class Size(val w: Float=0f, val h: Float=0f){
     operator fun plus(size: Size) = Size(size.w+w,size.h+h)
