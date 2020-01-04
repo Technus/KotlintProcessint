@@ -2,3 +2,5 @@
 target/**
 .idea/**
 Kotlin't Processin't.iml
+*.svg
+*.ttf
