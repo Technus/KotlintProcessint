@@ -1,0 +1,128 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <font id="Quaghn1577961023535" horiz-adv-x="192.0" >
+      <font-face font-family="Quaghn"
+          units-per-em="144.0"
+          panose-1="0 0 0 0 0 0 0 0 0 0"
+          ascent="144.0"
+          descent="0"
+          alphabetic="0" />
+<glyph unicode="&#x0060;" horiz-adv-x="0" d="" />
+<glyph unicode="1"        horiz-adv-x="0" d="" />
+<glyph unicode="2"        horiz-adv-x="0" d="" />
+<glyph unicode="3"        horiz-adv-x="0" d="" />
+<glyph unicode="4"        horiz-adv-x="0" d="" />
+<glyph unicode="5"        horiz-adv-x="0" d="" />
+<glyph unicode="6"        horiz-adv-x="0" d="" />
+<glyph unicode="7"        horiz-adv-x="0" d="" />
+<glyph unicode="8"        horiz-adv-x="0" d="" />
+<glyph unicode="9"        horiz-adv-x="0" d="" />
+<glyph unicode="0"        horiz-adv-x="0" d="" />
+<glyph unicode="&#x002d;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x003d;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x007e;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x0021;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x0040;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x0023;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x0024;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x0025;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x005e;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x0026;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x002a;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x0028;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x0029;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x005f;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x002b;" horiz-adv-x="0" d="" />
+<glyph unicode="q"        horiz-adv-x="0" d="M 0.0 128.0 Q 0.0 144.0 16.0 144.0 Z M 16.0 144.0 Q 16.0 128.0 0.0 128.0 Z " />
+<glyph unicode="w"        horiz-adv-x="0" d="M 0.0 96.0 Q 0.0 112.0 16.0 112.0 Z M 16.0 112.0 Q 16.0 96.0 0.0 96.0 Z " />
+<glyph unicode="e"        horiz-adv-x="0" d="M 0.0 64.0 Q 0.0 80.0 16.0 80.0 Z M 16.0 80.0 Q 16.0 64.0 0.0 64.0 Z " />
+<glyph unicode="r"        horiz-adv-x="0" d="M 0.0 32.0 Q 0.0 48.0 16.0 48.0 Z M 16.0 48.0 Q 16.0 32.0 0.0 32.0 Z " />
+<glyph unicode="t"        horiz-adv-x="0" d="M 0.0 0.0 Q 0.0 16.0 16.0 16.0 Z M 16.0 16.0 Q 16.0 0.0 0.0 0.0 Z " />
+<glyph unicode="y"        horiz-adv-x="0" d="" />
+<glyph unicode="u"        horiz-adv-x="0" d="" />
+<glyph unicode="i"        horiz-adv-x="0" d="" />
+<glyph unicode="o"        horiz-adv-x="0" d="" />
+<glyph unicode="p"        horiz-adv-x="0" d="" />
+<glyph unicode="&#x005b;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x005d;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x005c;" horiz-adv-x="0" d="" />
+<glyph unicode="Q"        horiz-adv-x="0" d="" />
+<glyph unicode="W"        horiz-adv-x="0" d="" />
+<glyph unicode="E"        horiz-adv-x="0" d="" />
+<glyph unicode="R"        horiz-adv-x="0" d="" />
+<glyph unicode="T"        horiz-adv-x="0" d="" />
+<glyph unicode="Y"        horiz-adv-x="0" d="" />
+<glyph unicode="U"        horiz-adv-x="0" d="" />
+<glyph unicode="I"        horiz-adv-x="0" d="" />
+<glyph unicode="O"        horiz-adv-x="0" d="" />
+<glyph unicode="P"        horiz-adv-x="0" d="" />
+<glyph unicode="&#x007b;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x007d;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x007c;" horiz-adv-x="0" d="" />
+<glyph unicode="a"        horiz-adv-x="0" d="M 0.0 128.0 Q 0.0 144.0 16.0 144.0 Z M 16.0 144.0 L 16.0 128.0 L 0.0 128.0 Z M 16.0 144.0 L 24.0 144.0 L 24.0 128.0 L 16.0 128.0 Z M 32.0 144.0 L 48.0 144.0 L 32.0 128.0 Z M 24.0 144.0 L 32.0 144.0 L 32.0 128.0 L 24.0 128.0 Z M 48.0 144.0 Q 48.0 128.0 32.0 128.0 Z " />
+<glyph unicode="s"        horiz-adv-x="0" d="M 0.0 96.0 Q 0.0 112.0 16.0 112.0 Z M 16.0 112.0 L 16.0 96.0 L 0.0 96.0 Z M 16.0 112.0 L 24.0 112.0 L 24.0 96.0 L 16.0 96.0 Z M 32.0 112.0 L 48.0 112.0 L 32.0 96.0 Z M 24.0 112.0 L 32.0 112.0 L 32.0 96.0 L 24.0 96.0 Z M 48.0 112.0 Q 48.0 96.0 32.0 96.0 Z " />
+<glyph unicode="d"        horiz-adv-x="0" d="M 0.0 64.0 Q 0.0 80.0 16.0 80.0 Z M 16.0 80.0 L 16.0 64.0 L 0.0 64.0 Z M 16.0 80.0 L 24.0 80.0 L 24.0 64.0 L 16.0 64.0 Z M 32.0 80.0 L 48.0 80.0 L 32.0 64.0 Z M 24.0 80.0 L 32.0 80.0 L 32.0 64.0 L 24.0 64.0 Z M 48.0 80.0 Q 48.0 64.0 32.0 64.0 Z " />
+<glyph unicode="f"        horiz-adv-x="0" d="M 0.0 32.0 Q 0.0 48.0 16.0 48.0 Z M 16.0 48.0 L 16.0 32.0 L 0.0 32.0 Z M 16.0 48.0 L 24.0 48.0 L 24.0 32.0 L 16.0 32.0 Z M 32.0 48.0 L 48.0 48.0 L 32.0 32.0 Z M 24.0 48.0 L 32.0 48.0 L 32.0 32.0 L 24.0 32.0 Z M 48.0 48.0 Q 48.0 32.0 32.0 32.0 Z " />
+<glyph unicode="g"        horiz-adv-x="0" d="M 0.0 0.0 Q 0.0 16.0 16.0 16.0 Z M 16.0 16.0 L 16.0 0.0 L 0.0 0.0 Z M 16.0 16.0 L 24.0 16.0 L 24.0 0.0 L 16.0 0.0 Z M 32.0 16.0 L 48.0 16.0 L 32.0 0.0 Z M 24.0 16.0 L 32.0 16.0 L 32.0 0.0 L 24.0 0.0 Z M 48.0 16.0 Q 48.0 0.0 32.0 0.0 Z " />
+<glyph unicode="h"        horiz-adv-x="0" d="" />
+<glyph unicode="j"        horiz-adv-x="0" d="" />
+<glyph unicode="k"        horiz-adv-x="0" d="" />
+<glyph unicode="l"        horiz-adv-x="0" d="" />
+<glyph unicode="&#x003b;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x0027;" horiz-adv-x="0" d="" />
+<glyph unicode="A"        horiz-adv-x="0" d="" />
+<glyph unicode="S"        horiz-adv-x="0" d="" />
+<glyph unicode="D"        horiz-adv-x="0" d="" />
+<glyph unicode="F"        horiz-adv-x="0" d="" />
+<glyph unicode="G"        horiz-adv-x="0" d="" />
+<glyph unicode="H"        horiz-adv-x="0" d="" />
+<glyph unicode="J"        horiz-adv-x="0" d="" />
+<glyph unicode="K"        horiz-adv-x="0" d="" />
+<glyph unicode="L"        horiz-adv-x="0" d="" />
+<glyph unicode="&#x003a;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x0022;" horiz-adv-x="0" d="" />
+<glyph unicode="z"        horiz-adv-x="0" d="M 0.0 128.0 Q 0.0 144.0 16.0 144.0 Z M 16.0 144.0 L 16.0 128.0 L 0.0 128.0 Z M 0.0 128.0 L 16.0 128.0 L 16.0 120.0 L 0.0 120.0 Z M 0.0 112.0 L 16.0 112.0 L 0.0 96.0 Z M 0.0 120.0 L 16.0 120.0 L 16.0 112.0 L 0.0 112.0 Z M 16.0 112.0 Q 16.0 96.0 0.0 96.0 Z " />
+<glyph unicode="x"        horiz-adv-x="0" d="M 0.0 96.0 Q 0.0 112.0 16.0 112.0 Z M 16.0 112.0 L 16.0 96.0 L 0.0 96.0 Z M 0.0 96.0 L 16.0 96.0 L 16.0 88.0 L 0.0 88.0 Z M 0.0 80.0 L 16.0 80.0 L 0.0 64.0 Z M 0.0 88.0 L 16.0 88.0 L 16.0 80.0 L 0.0 80.0 Z M 16.0 80.0 Q 16.0 64.0 0.0 64.0 Z " />
+<glyph unicode="c"        horiz-adv-x="0" d="M 0.0 64.0 Q 0.0 80.0 16.0 80.0 Z M 16.0 80.0 L 16.0 64.0 L 0.0 64.0 Z M 0.0 64.0 L 16.0 64.0 L 16.0 56.0 L 0.0 56.0 Z M 0.0 48.0 L 16.0 48.0 L 0.0 32.0 Z M 0.0 56.0 L 16.0 56.0 L 16.0 48.0 L 0.0 48.0 Z M 16.0 48.0 Q 16.0 32.0 0.0 32.0 Z " />
+<glyph unicode="v"        horiz-adv-x="0" d="M 0.0 32.0 Q 0.0 48.0 16.0 48.0 Z M 16.0 48.0 L 16.0 32.0 L 0.0 32.0 Z M 0.0 32.0 L 16.0 32.0 L 16.0 24.0 L 0.0 24.0 Z M 0.0 16.0 L 16.0 16.0 L 0.0 0.0 Z M 0.0 24.0 L 16.0 24.0 L 16.0 16.0 L 0.0 16.0 Z M 16.0 16.0 Q 16.0 0.0 0.0 0.0 Z " />
+<glyph unicode="b"        horiz-adv-x="32" d="" />
+<glyph unicode="n"        horiz-adv-x="0" d="" />
+<glyph unicode="m"        horiz-adv-x="0" d="" />
+<glyph unicode="&#x002c;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x002e;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x002f;" horiz-adv-x="0" d="" />
+<glyph unicode="Z"        horiz-adv-x="0" d="" />
+<glyph unicode="X"        horiz-adv-x="0" d="" />
+<glyph unicode="C"        horiz-adv-x="0" d="" />
+<glyph unicode="V"        horiz-adv-x="0" d="" />
+<glyph unicode="B"        horiz-adv-x="0" d="" />
+<glyph unicode="N"        horiz-adv-x="0" d="" />
+<glyph unicode="M"        horiz-adv-x="0" d="" />
+<glyph unicode="&#x003c;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x003e;" horiz-adv-x="0" d="" />
+<glyph unicode="&#x003f;" horiz-adv-x="0" d="" />
+<glyph unicode="ę"        horiz-adv-x="0" d="" />
+<glyph unicode="&#x20ac;" horiz-adv-x="0" d="" />
+<glyph unicode="ó"        horiz-adv-x="0" d="" />
+<glyph unicode="ą"        horiz-adv-x="0" d="" />
+<glyph unicode="ś"        horiz-adv-x="0" d="" />
+<glyph unicode="ł"        horiz-adv-x="0" d="" />
+<glyph unicode="ż"        horiz-adv-x="0" d="" />
+<glyph unicode="ź"        horiz-adv-x="0" d="" />
+<glyph unicode="ć"        horiz-adv-x="0" d="" />
+<glyph unicode="ń"        horiz-adv-x="0" d="" />
+<glyph unicode="Ę"        horiz-adv-x="0" d="" />
+<glyph unicode="&#x0020;" horiz-adv-x="192" d="" />
+<glyph unicode="Ó"        horiz-adv-x="0" d="" />
+<glyph unicode="Ą"        horiz-adv-x="0" d="" />
+<glyph unicode="Ś"        horiz-adv-x="0" d="" />
+<glyph unicode="Ł"        horiz-adv-x="0" d="" />
+<glyph unicode="Ż"        horiz-adv-x="0" d="" />
+<glyph unicode="Ź"        horiz-adv-x="0" d="" />
+<glyph unicode="Ć"        horiz-adv-x="0" d="" />
+<glyph unicode="Ń"        horiz-adv-x="0" d="" />
+    </font>
+  </defs>
+</svg>
