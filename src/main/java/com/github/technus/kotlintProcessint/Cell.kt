@@ -4,7 +4,6 @@ import com.github.technus.kotlintProcessint.Constants.smolDiff
 import processing.core.PConstants.*
 import processing.event.MouseEvent
 
-
 class Cell(_position: Position,_size: Size= Size(32f,32f)):Area(_position, _size) {
     var exists = false
         set(value) {
@@ -68,8 +67,9 @@ class Cell(_position: Position,_size: Size= Size(32f,32f)):Area(_position, _size
 
     fun toChar(): Char = if (exists) ('a'.toByte() + toByte() - 0b10000).toChar() else '-'
     fun fromChar(char: Char) {
-        exists = false
-        if (char != '-') {
+        if (char == '-') {
+            exists = false
+        } else {
             exists = true
             val toInt = char.toInt() - 'a'.toInt()
             if (toInt and 0b1000 != 0) {
@@ -123,7 +123,7 @@ class Cell(_position: Position,_size: Size= Size(32f,32f)):Area(_position, _size
         }
         return stringBuilder.toString()
     }
-
+    
     private fun StringBuilder.rect(position: Position, x: Float, y: Float, w: Float, h: Float) =
         this.append("M ${x + position.x} ${y + position.y} L ${x + w + position.x} ${y + position.y} L ${x + w + position.x} ${y + h + position.y} L ${x + position.x} ${y + h + position.y} Z ")
 
@@ -168,9 +168,9 @@ class Cell(_position: Position,_size: Size= Size(32f,32f)):Area(_position, _size
 
     override fun mousePosition(position: Position?) {
         val envelops = envelops(position)
-        if (onTop && !envelops) {
+        //if (onTop && !envelops) {
             //todo something ...? println(toSVG())
-        }
+        //}
         onTop = envelops
     }
 

@@ -4,7 +4,7 @@ import processing.event.KeyEvent
 import processing.event.MouseEvent
 
 open class Area(val position: Position,val size: Size) {
-    private val positiont=position+size
+    private val endPosition=position+size
 
     open fun mouseDragged(event: MouseEvent){}
 
@@ -23,10 +23,10 @@ open class Area(val position: Position,val size: Size) {
     }
 
     fun envelops(point: Position?): Boolean =
-        if (point==null) false else point.x>position.x && point.x<positiont.x && point.y>position.y && point.y<positiont.y
+        if (point==null) false else point.x>position.x && point.x<endPosition.x && point.y>position.y && point.y<endPosition.y
 
     fun envelops(point: MouseEvent): Boolean =
-        point.x>position.x && point.x<positiont.x && point.y>position.y && point.y<positiont.y
+        point.x>position.x && point.x<endPosition.x && point.y>position.y && point.y<endPosition.y
 
     fun innerPoint(point: Position):Position = (point-position)/size
 

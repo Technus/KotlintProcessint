@@ -10,12 +10,14 @@ class Text(
     _gridSize:Size=Size(32f,32f),
     _cellSize:Size= glyphSize *Constants.cellSize
 ):Grid<Glyph>(_position, _gridSize,_cellSize) {
+
     init {
         for (x in 0 until gridSize.w.toInt()) for(y in 0 until gridSize.h.toInt()){
             val gridPos = Position(x.toFloat(), y.toFloat())
             cells[gridPos] = Glyph(position+gridPos*cellSize)
         }
     }
+
     fun toFontSVG(string:String):String="""
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -33,10 +35,10 @@ ${cells.values.stream().filter{cell->cell.char!='\u0000'}.map { cell -> cell.toG
   </defs>
 </svg>""".trimIndent()
 
-
     fun toStringRepresentation():String= cells.entries.stream().map { entry->
         "${entry.value.toStringRepresentation()}@${entry.key.x};${entry.key.y}"
     }.toList().joinToString(separator = "\n")
+
     fun fromStringRepresentation(string: String){
         val lines = string.lines()
         lines.forEach { line->

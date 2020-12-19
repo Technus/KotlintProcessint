@@ -8,7 +8,7 @@ import java.nio.file.Files
 
 class App : PApplet() {
     private val text=Text(_gridSize = Constants.size)
-    val glyphs=File("glyphs.txt")
+    private val glyphs=File("glyphs.txt")
 
     override fun settings() {
         size(800,600, P2D)
@@ -51,7 +51,7 @@ class App : PApplet() {
         if(event.keyCode==27){
             Files.write(glyphs.toPath(),text.toStringRepresentation().lines())
             val currentTimeMillis = System.currentTimeMillis()
-            Files.write(File("font ${currentTimeMillis}.svg").toPath(),text.toFontSVG(currentTimeMillis.toString()).lines())
+            Files.write(File("font $currentTimeMillis.svg").toPath(),text.toFontSVG(currentTimeMillis.toString()).lines())
         }else{
             super.keyPressed(event)
         }
