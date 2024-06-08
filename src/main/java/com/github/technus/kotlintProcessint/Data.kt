@@ -1,6 +1,6 @@
 package com.github.technus.kotlintProcessint
 
-data class Position(val x: Float=0f, val y: Float=0f): Comparable<Position> {
+data class Position(val x: Float = 0f, val y: Float = 0f) : Comparable<Position> {
     fun shift(xShift: Float, yShift: Float) = Position(x + xShift, y + yShift)
 
     operator fun plus(position: Position) = Position(x + position.x, y + position.y)
@@ -21,12 +21,12 @@ data class Position(val x: Float=0f, val y: Float=0f): Comparable<Position> {
     }
 }
 
-data class Size(val w: Float=0f, val h: Float=0f) {
+data class Size(val w: Float = 0f, val h: Float = 0f) {
     operator fun plus(size: Size) = Size(w + size.w, h + size.h)
     operator fun minus(size: Size) = Size(w - size.w, h - size.h)
     operator fun times(size: Size) = Size(w * size.w, h * size.h)
-    operator fun div(size: Size) = Size(w/size.w,h/size.h)
+    operator fun div(size: Size) = Size(w / size.w, h / size.h)
 
-    operator fun times(mul:Number) = Size(w*mul.toFloat(),h*mul.toFloat())
+    operator fun times(mul: Number) = Size(w * mul.toFloat(), h * mul.toFloat())
     operator fun div(divider: Number) = Size(w / divider.toFloat(), h / divider.toFloat())
 }
